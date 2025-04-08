@@ -14,7 +14,6 @@ body{
 .contenedor
 {
     width: 90%;
-    /*background-color: blanchedalmond;*/
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
@@ -22,49 +21,50 @@ body{
 /*---------HEADER--------*/
 header{
     width: 100%;
-    background: url('../img/acerca\ de.jpeg') #281a0c;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center 0;
+    background: url('../img/acerca\ de.jpeg') #281a0c; /*agrega un aimagen y le pone color en la parte de atrás*/
+    background-size: cover;/*ocupa toda la seccion de mi contenedor*/
+    background-attachment: fixed; /*Mantiene la imagen fija donde se la coloque*/
+    background-position: center 0; /*alinea la imagen*/
 }
 header .contenedor {
-    position: relative;
+    position: relative; /*cambia el tamaño automaticamente sin darle valor*/
     height: 700px;
 }
 header .menu {
-    width: 100%;
-    text-align: right;
+    width: 100%; /*ocupa el 100 del contenedor*/
+    text-align: right; /*pone al lado derecho*/
 }
-header .menu a {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 300;
-    display: inline-block;
-    margin: 40px 20px;
-    text-decoration: none;
-    position: relative;
+header .menu a { /* busca en el header la clase menu y la letra a*/
+    color: #fff; /*la letra en blanco*/
+    font-size: 20px; /*aumenta el tamaño de la letra*/
+    font-weight: 300; /*aumenta la anchura de la letra*/
+    display: inline-block; /*cambia a las etiquetas de tipo seccion a tipo bloque*/
+    margin: 40px 20px; /*arriba y abajo - derecha izquierda*/
+    text-decoration: none; /*borra la línea de la parte de abajo*/
+    position: relative; /* puede cambiar la posicion en cualquier momento */
 }
-header .menu a:hover {
-    text-decoration: underline;
+/*pseudo clase= clase dentro de una clase*/
+header .menu a:hover { /*hover= da una animación*/
+    text-decoration: underline;/*cuando pasa el cursor se genera la linea*/
 }
 header .texto {
-    width: 100%;
+    width: 100%; /*anchura del 100 del 90%*/
     color: #fff;
-    position: absolute;
-    top: 50%;
-    margin-top: -52px;
+    position: absolute; /*determina la posicion*/
+    top: 50%;/*que empiece al 50% del contenedor */
+    margin-top: -52px; /*margen en el lado de arriba y que empiece en -52px*/
 }
-header .texto .nombre {
-    font-size: 50px;
-    font-weight: 600;
+header .texto .nombre { /*Modifica "café san Francisco"*/
+    font-size: 50px; /* tamaño*/
+    font-weight: 600; /*anchura*/
 }
-header .texto .nombre span {
-    font-weight: 300;
+header .texto .nombre span { /*palabra clave dentro del span "CAFÉ"*/
+    font-weight: 300; /*anchura*/
 }
 header .texto h3 {
-    font-weight: 300;
-    font-size: 25px;
-    font-style: italic;
+    font-weight: 300; /*anchura*/
+    font-size: 25px; /*tamaño*/
+    font-style: italic;/*cursiva*/
 }
 /*----------MAIN------------*/
 .main {
